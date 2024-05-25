@@ -1,0 +1,34 @@
+package net.acoyt.tutorialmod.item;
+
+import net.acoyt.tutorialmod.Tutorialmod;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroups;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
+
+public class ModItems {
+    public static final Item RUBY = registerItem("ruby", new Item(new FabricItemSettings()));
+    public static final Item RUBY_ORE = registerItem("ruby_ore", new Item(new FabricItemSettings()));
+
+    private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
+        entries.add(RUBY);
+    }
+    private static void addItemsToNATURALItemGroup(FabricItemGroupEntries entries) {
+        entries.add(RUBY_ORE);
+    }
+
+    private static Item registerItem(String name, Item item) {
+        return Registry.register(Registries.ITEM, new Identifier(Tutorialmod.MOD_ID, name), item);
+    }
+
+    public static void registerModItems() {
+        Tutorialmod.LOGGER.info("Registering Mod Items for " + Tutorialmod.MOD_ID);
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientItemGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(ModItems::addItemsToNATURALItemGroup);
+    }
+}
