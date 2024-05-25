@@ -1,5 +1,6 @@
 package net.acoyt.tutorialmod;
 
+import net.acoyt.tutorialmod.block.ModBlocks;
 import net.acoyt.tutorialmod.item.ModItemGroups;
 import net.acoyt.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -13,8 +14,10 @@ public class Tutorialmod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModItemGroups.registerItemGroups();
+		ModItemGroups.RegisterItemGroups();
+
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 		LOGGER.info("Hello Fabric world!");
 	}
 }

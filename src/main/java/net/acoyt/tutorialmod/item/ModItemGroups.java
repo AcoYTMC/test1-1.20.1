@@ -1,6 +1,7 @@
 package net.acoyt.tutorialmod.item;
 
 import net.acoyt.tutorialmod.Tutorialmod;
+import net.acoyt.tutorialmod.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -15,7 +16,9 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.ruby"))
                     .icon(() -> new ItemStack(ModItems.RUBY)).entries((displayContext, entries) -> {
                         entries.add(ModItems.RUBY);
-                        entries.add(ModItems.RUBY_ORE);
+
+                        entries.add(ModBlocks.RUBY_ORE);
+                        entries.add(ModBlocks.RUBY_BLOCK);
 
 
 

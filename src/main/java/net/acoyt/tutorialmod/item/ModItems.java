@@ -12,13 +12,12 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item RUBY = registerItem("ruby", new Item(new FabricItemSettings()));
-    public static final Item RUBY_ORE = registerItem("ruby_ore", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(RUBY);
     }
     private static void addItemsToNATURALItemGroup(FabricItemGroupEntries entries) {
-        entries.add(RUBY_ORE);
+
     }
 
     private static Item registerItem(String name, Item item) {
