@@ -33,6 +33,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.METAL_DETECTOR, Models.GENERATED);
         //tools
         itemModelGenerator.register(ModItems.FRACTURED_SCYTHE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CORAL_BOW, Models.GENERATED);
 
     }
 }
