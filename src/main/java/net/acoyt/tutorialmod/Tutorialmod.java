@@ -3,6 +3,7 @@ package net.acoyt.tutorialmod;
 import net.acoyt.tutorialmod.block.ModBlocks;
 import net.acoyt.tutorialmod.item.ModItemGroups;
 import net.acoyt.tutorialmod.item.ModItems;
+import net.acoyt.tutorialmod.util.ModLootTableModifiers;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -18,6 +19,7 @@ public class Tutorialmod implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModLootTableModifiers.modifyLootTables();
 		LOGGER.info("Hello Fabric world!");
 	}
 }

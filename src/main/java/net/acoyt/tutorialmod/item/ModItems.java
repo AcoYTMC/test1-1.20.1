@@ -6,12 +6,23 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
+import net.minecraft.item.SwordItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item RUBY = registerItem("ruby", new Item(new FabricItemSettings()));
+
+    public static final Item FRACTURED_INGOT = registerItem("fractured_ingot", new Item(new FabricItemSettings()));
+
+    public static final Item METAL_DETECTOR = registerItem("metal_detector", new Item(new FabricItemSettings().food(ModFoodComponents.METAL_DETECTOR)));
+
+    public static final Item FRACTURED_SCYTHE = registerItem("fractured_scythe",
+            new SwordItem(ModToolMaterial.FRACTURED_INGOT, 9, 1.4f, new FabricItemSettings().maxCount(1)));
+
+    public static final Item TOAST = registerItem("toast",
+            new Item(new FabricItemSettings().food(ModFoodComponents.TOAST)));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(RUBY);

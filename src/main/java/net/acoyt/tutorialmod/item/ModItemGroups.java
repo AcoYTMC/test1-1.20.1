@@ -16,6 +16,10 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.ruby"))
                     .icon(() -> new ItemStack(ModItems.RUBY)).entries((displayContext, entries) -> {
                         entries.add(ModItems.RUBY);
+                        entries.add(ModItems.FRACTURED_INGOT);
+                        entries.add(ModItems.FRACTURED_SCYTHE);
+                        entries.add(ModItems.METAL_DETECTOR);
+                        entries.add((ModItems.TOAST));
 
                         entries.add(ModBlocks.RUBY_ORE);
                         entries.add(ModBlocks.RUBY_BLOCK);

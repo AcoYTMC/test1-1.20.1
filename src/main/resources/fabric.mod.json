@@ -2,10 +2,10 @@
 	"schemaVersion": 1,
 	"id": "tutorialmod",
 	"version": "${version}",
-	"name": "tutorialmod",
+	"name": "AcoYT's Mod",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Me!"
+		"AcoYT"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",

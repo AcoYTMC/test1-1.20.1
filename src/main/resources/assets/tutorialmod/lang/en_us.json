@@ -1,6 +1,9 @@
 {
   "item.tutorialmod.ruby": "Ruby",
-  "item.tutorialmod.ruby_ore": "Ruby Ore",
+  "item.tutorialmod.metal_detector": "Metal Detector",
+  "item.tutorialmod.fractured_ingot": "Fractured Ingot",
+  "item.tutorialmod.fractured_scythe": "Fractured Scythe",
+  "item.tutorialmod.toast": "Toast",
 
   "block.tutorialmod.ruby_block": "Block of Ruby",
   "block.tutorialmod.ruby_ore": "Ruby Ore",
