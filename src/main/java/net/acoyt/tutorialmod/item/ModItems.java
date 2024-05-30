@@ -4,6 +4,7 @@ import net.acoyt.tutorialmod.Tutorialmod;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.item.BowItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.SwordItem;
@@ -19,10 +20,13 @@ public class ModItems {
     public static final Item METAL_DETECTOR = registerItem("metal_detector", new Item(new FabricItemSettings().food(ModFoodComponents.METAL_DETECTOR)));
 
     public static final Item FRACTURED_SCYTHE = registerItem("fractured_scythe",
-            new SwordItem(ModToolMaterial.FRACTURED_INGOT, 9, 1.4f, new FabricItemSettings().maxCount(1)));
+            new SwordItem(ModToolMaterial.FRACTURED_INGOT, -1, -2f, new FabricItemSettings().maxCount(1)));
 
     public static final Item TOAST = registerItem("toast",
             new Item(new FabricItemSettings().food(ModFoodComponents.TOAST)));
+
+    public static final Item CORAL_BOW = registerItem("coral_bow",
+            new BowItem(new FabricItemSettings().maxDamage(700)));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(RUBY);

@@ -18,6 +18,7 @@ public class ModItemGroups {
                         entries.add(ModItems.RUBY);
                         entries.add(ModItems.FRACTURED_INGOT);
                         entries.add(ModItems.FRACTURED_SCYTHE);
+                        entries.add(ModItems.CORAL_BOW);
                         entries.add(ModItems.METAL_DETECTOR);
                         entries.add((ModItems.TOAST));
 

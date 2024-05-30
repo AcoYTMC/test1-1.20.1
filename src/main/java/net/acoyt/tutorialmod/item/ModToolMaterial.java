@@ -6,7 +6,7 @@ import net.minecraft.recipe.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
-    FRACTURED_INGOT(5, 2500, 1.4f, 8.5f, 26,
+    FRACTURED_INGOT(5, 2500, 4.5f, 11.5f, 26,
             () -> Ingredient.ofItems(ModItems.FRACTURED_INGOT));
 
     public final int mininglevel;
